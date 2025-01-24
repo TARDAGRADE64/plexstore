@@ -158,6 +158,19 @@
         #closeCartButton:hover {
             background-color: #c82333;
         }
+
+        /* Add to Cart Confirmation */
+        #addedConfirmation {
+            display: none;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -184,6 +197,11 @@
             <button id="checkoutButton">Checkout</button>
             <button id="closeCartButton">Close</button>
         </div>
+    </div>
+
+    <!-- Add to Cart Confirmation -->
+    <div id="addedConfirmation">
+        <p>Item added to cart!</p>
     </div>
 
     <script>
@@ -227,6 +245,13 @@
                 }
 
                 updateCart();
+
+                // Show the "Item added" confirmation
+                const confirmation = document.getElementById('addedConfirmation');
+                confirmation.style.display = 'block';
+                setTimeout(() => {
+                    confirmation.style.display = 'none';
+                }, 2000); // Hide after 2 seconds
             });
         });
 
