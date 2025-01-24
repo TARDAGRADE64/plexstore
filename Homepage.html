@@ -254,7 +254,6 @@
                 }, 2000); // Hide after 2 seconds
             });
         });
-
         // Update Cart
         function updateCart() {
             const cartCount = document.getElementById('cartCount');
@@ -266,14 +265,16 @@
             
             // Add cart items to the modal
             let total = 0;
+            let totalItemCount = 0; // To keep track of the total number of items (including quantity)
             cart.forEach(item => {
                 const li = document.createElement('li');
                 li.textContent = `${item.title} x ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
                 cartItems.appendChild(li);
                 total += item.price * item.quantity;
+                totalItemCount += item.quantity; // Add the quantity of each item to the total count
             });
-
-            cartCount.textContent = cart.length;
+        
+            cartCount.textContent = totalItemCount; // Update the cart count to show the total number of items
             totalPrice.textContent = total.toFixed(2);
         }
 
@@ -289,7 +290,7 @@
 
         // Checkout (simple alert for now)
         document.getElementById('checkoutButton').addEventListener('click', function() {
-            alert('Checkout process will be implemented soon!');
+            alert('!!!!!Checkout process will be implemented soon!');
             cart = [];  // Clear the cart
             updateCart();
         });
