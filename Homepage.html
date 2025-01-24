@@ -235,17 +235,18 @@
                 const bookId = this.getAttribute('data-id');
                 const bookTitle = this.getAttribute('data-title');
                 const bookPrice = parseFloat(this.getAttribute('data-price'));
-
+        
                 // Check if the book is already in the cart
                 const existingBook = cart.find(item => item.id == bookId);
                 if (existingBook) {
-                    existingBook.quantity += 1;
+                    existingBook.quantity += 1;  // Increase quantity of the existing book
                 } else {
+                    // Add new book to the cart
                     cart.push({ id: bookId, title: bookTitle, price: bookPrice, quantity: 1 });
                 }
-
-                updateCart();
-
+        
+                updateCart();  // Update cart contents and total count
+        
                 // Show the "Item added" confirmation
                 const confirmation = document.getElementById('addedConfirmation');
                 confirmation.style.display = 'block';
@@ -254,6 +255,8 @@
                 }, 2000); // Hide after 2 seconds
             });
         });
+
+        
         // Update Cart
         function updateCart() {
             const cartCount = document.getElementById('cartCount');
@@ -290,7 +293,7 @@
 
         // Checkout (simple alert for now)
         document.getElementById('checkoutButton').addEventListener('click', function() {
-            alert('!!!!!Checkout process will be implemented soon!');
+            alert('Checkout process will be implemented soon!!!');
             cart = [];  // Clear the cart
             updateCart();
         });
