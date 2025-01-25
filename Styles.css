@@ -8,7 +8,7 @@ body {
 
 /* Header Section */
 .header {
-  background-color: #0047ab;
+  background-color: #2e8b57; /* Green */
   color: white;
   padding: 20px 0;
 }
@@ -34,7 +34,7 @@ body {
 
 /* Rounded Edges for Buttons */
 .btn {
-  background-color: #0047ab;
+  background-color: #2e8b57; /* Green */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -43,19 +43,19 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #003b8b;
+  background-color: #236d45; /* Darker Green */
 }
 
 /* Hero Section */
 .hero {
-  background-color: #e0f3ff;
+  background-color: #eaf8f0; /* Light Green Tint */
   text-align: center;
   padding: 50px 20px;
   border-radius: 10px;
 }
 .hero-content h2 {
   font-size: 2.5rem;
-  color: #0047ab;
+  color: #2e8b57; /* Green */
 }
 .hero-content p {
   margin: 20px 0;
@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 .books h2 {
-  color: #0047ab;
+  color: #2e8b57; /* Green */
   margin-bottom: 30px;
 }
 .book-grid {
@@ -95,7 +95,7 @@ body {
 }
 .book-card p {
   font-size: 1.2rem;
-  color: #0047ab;
+  color: #2e8b57; /* Green */
   font-weight: bold;
 }
 
@@ -103,7 +103,7 @@ body {
 .cart {
   padding: 50px 20px;
   text-align: center;
-  background-color: #e0f3ff;
+  background-color: #eaf8f0; /* Light Green Tint */
   border-radius: 10px;
 }
 .cart .cart-items {
@@ -111,18 +111,18 @@ body {
 }
 .total-price {
   font-size: 1.5rem;
-  color: #0047ab;
+  color: #2e8b57; /* Green */
 }
 
 /* Footer Section */
 .footer {
-  background-color: #0047ab;
+  background-color: #2e8b57; /* Green */
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 .footer a {
-  color: #e0f3ff;
+  color: #cfe8d9; /* Light Green */
   text-decoration: none;
 }
 .footer a:hover {
