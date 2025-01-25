@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+  background-color: #0047ab;
+  color: white;
+  padding: 20px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Rounded Edges for Buttons */
+.btn {
+  background-color: #0047ab;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #003b8b;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e0f3ff;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #0047ab;
+}
+.hero-content p {
+  margin: 20px 0;
+}
+
+/* Books Section */
+.books {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.books h2 {
+  color: #0047ab;
+  margin-bottom: 30px;
+}
+.book-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.book-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+.book-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.book-card h3 {
+  color: #333;
+  margin: 10px 0;
+}
+.book-card p {
+  font-size: 1.2rem;
+  color: #0047ab;
+  font-weight: bold;
+}
+
+/* Cart Section */
+.cart {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #e0f3ff;
+  border-radius: 10px;
+}
+.cart .cart-items {
+  margin-bottom: 20px;
+}
+.total-price {
+  font-size: 1.5rem;
+  color: #0047ab;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0047ab;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer a {
+  color: #e0f3ff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
